@@ -1,0 +1,39 @@
+/***** Reset CSS *****/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#header {
+  background-color: #000000;
+  height: 46px;
+}
+
+#nav {
+}
+
+#nav li {
+  display: inline-block;
+}
+
+#nav .subnav {
+  display: none;
+}
+
+#nav li a {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: inline-block;
+}
+
+#nav li:hover a {
+  color: #000000;
+  background-color: #cccccc;
+}
