@@ -12,28 +12,81 @@ html {
 #header {
   background-color: #000000;
   height: 46px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#header .nav-search {
+  color: #ffffff;
+  float: right;
+  line-height: 46px;
+  padding: 0 21px;
+}
+
+#header .nav-search:hover {
+  background-color: #f44336;
+  cursor: pointer;
 }
 
 #nav {
+  display: inline-block;
 }
 
 #nav li {
   display: inline-block;
+  position: relative;
+}
+
+#nav > li > a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+}
+
+#nav .arrow-down-icon {
+  font-size: 14px;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+  color: #000000;
+  background-color: #cccccc;
+}
+
+#nav li:hover .subnav {
+  display: block;
 }
 
 #nav .subnav {
   display: none;
+  min-width: 160px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#nav li a {
-  color: #ffffff;
-  text-decoration: none;
-  line-height: 46px;
-  padding: 0 24px;
-  display: inline-block;
+#nav .subnav li {
+  width: 100%;
 }
 
-#nav li:hover a {
+#nav .subnav a {
   color: #000000;
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+#slider {
+  margin-top: 46px;
+  height: 1000px;
   background-color: #cccccc;
 }
