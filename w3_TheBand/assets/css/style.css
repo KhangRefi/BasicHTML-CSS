@@ -9,6 +9,12 @@ html {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.text-white {
+  color: #ffffff !important;
+}
+
+/***** Header *****/
+
 #header {
   background-color: #000000;
   height: 46px;
@@ -86,6 +92,7 @@ html {
   line-height: 22px;
 }
 
+/***** IMG Slider *****/
 #slider {
   margin-top: 46px;
   padding-top: 50%;
@@ -113,8 +120,7 @@ html {
   padding: 15px 0;
 }
 
-#content {
-}
+/***** Content *****/
 
 #content .content-section {
   width: 800px;
@@ -162,4 +168,100 @@ html {
   width: 154px;
   margin-top: 15px;
   border-radius: 4px;
+}
+
+/***** Tour Section *****/
+#tour-section {
+  background-color: #000000;
+}
+
+.ticket-list {
+  background-color: #ffffff;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.ticket-list li {
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #dddddd;
+  color: #757575;
+}
+
+.ticket-list .sold-out {
+  background-color: #f44336;
+  color: #ffffff;
+  padding: 3px 4px;
+  margin-left: 14px;
+}
+
+.ticket-list .ticket-quantity {
+  background-color: #000000;
+  color: #ffffff;
+  float: right;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+
+.place-list {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  overflow: hidden;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.place-item {
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 8px;
+}
+
+.place-img {
+  width: 100%;
+  display: block;
+}
+
+.place-img:hover {
+  opacity: 0.7;
+}
+
+.place-body {
+  background-color: #ffffff;
+  padding: 0 16px;
+  font-size: 15px;
+}
+
+.place-heading {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.place-time {
+  margin-top: 15px;
+  color: #757575;
+}
+
+.place-description {
+  margin-top: 15px;
+}
+
+.place-order {
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.place-order:hover {
+  color: #000000;
+  background-color: #cccccc;
 }
