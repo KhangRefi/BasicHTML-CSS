@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Band</title>
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAJiUoACAfIwAfHiEAJSQmAB4dHwBFREYAHx0iAB0cIAAfHiIAHx4gAB8dIwAgHyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAcLCQAAAAAAAAAAAAAACQkJCQkFAAAAAAAAAAAAAAEJCQkJCQYAAAAAAAAAAAAJCQkJCQkJAAAAAAAAAAAAAAkICgUFCQAAAAAAAAAAAAAAAAAACQkAAAAAAAAAAAAAAAAAAAkJAAAAAAAAAAAAAAAAAAAJCQAAAAAAAAAAAAAAAAAACQIAAAAAAAAAAAAAAAAAAAkCAAAEAAAAAAAAAAAAAAAJCQAACQAAAAAAAAAAAAAACQkACQkAAAAAAAAAAAAAAAkJAwoAAAAAAAAAAAAAAAAJCQUAAAAAAAAAAAAAAAAACQkAAAAAAAAAAAAAAAAAAAkJAAAAAAAAAOH/AADA/wAAwH8AAMB/AADgfwAA/n8AAP5/AAD+fwAA/n8AAP5vAAD+bwAA/k8AAP4fAAD+PwAA/n8AAP5/AAA="
+      rel="icon"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -17,18 +22,18 @@
         <!-- Nav beginning-->
         <ul id="nav">
           <li><a href="#slider">Home</a></li>
-          <li><a href="">Band</a></li>
-          <li><a href="">Tour</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#band">Band</a></li>
+          <li><a href="#tour">Tour</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
-            <a href="">
+            <a href="#">
               More
               <i class="arrow-down-icon ti-angle-down"></i>
             </a>
             <ul class="subnav">
-              <li><a href="">Merchandise</a></li>
-              <li><a href="">Extras</a></li>
-              <li><a href="">Media</a></li>
+              <li><a href="#">Merchandise</a></li>
+              <li><a href="#">Extras</a></li>
+              <li><a href="#">Media</a></li>
             </ul>
           </li>
         </ul>
@@ -49,7 +54,7 @@
       </div>
       <!-- About -->
       <div id="content">
-        <div class="content-section">
+        <div id="band" class="content-section">
           <h2 class="section-heading">THE BAND</h2>
           <p class="section-sub-heading">We love music!</p>
           <p class="about-text">
@@ -65,8 +70,8 @@
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-          <div class="member-list">
-            <div class="member-item">
+          <div class="row member-list">
+            <div class="text-center col col-3rd">
               <p class="member-name">Name</p>
               <img
                 class="member-img"
@@ -74,7 +79,7 @@
                 alt=""
               />
             </div>
-            <div class="member-item">
+            <div class="text-center col col-3rd">
               <p class="member-name">Name</p>
               <img
                 class="member-img"
@@ -82,7 +87,7 @@
                 alt=""
               />
             </div>
-            <div class="member-item">
+            <div class="text-center col col-3rd">
               <p class="member-name">Name</p>
               <img
                 class="member-img"
@@ -94,7 +99,7 @@
         </div>
         <!-- Tour -->
         <div id="tour-section">
-          <div class="content-section">
+          <div id="tour" class="content-section">
             <h2 class="section-heading text-white">TOUR DATES</h2>
             <p class="section-sub-heading text-white">
               Remember to book your tickets!
@@ -110,8 +115,8 @@
                 November<span class="ticket-quantity">3</span>
               </li>
             </ul>
-            <div class="place-list">
-              <div class="place-item">
+            <div class="place-list row">
+              <div class="col-3rd col">
                 <img
                   src="./assets/img/tour/tour1.jpg"
                   alt="New York"
@@ -123,10 +128,10 @@
                   <p class="place-description">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="place-order js-buy-ticket">Buy Tickets</button>
+                  <button class="btn js-buy-ticket">Buy Tickets</button>
                 </div>
               </div>
-              <div class="place-item">
+              <div class="col-3rd col">
                 <img
                   src="./assets/img/tour/tour2.jpg"
                   alt="Parish"
@@ -138,10 +143,10 @@
                   <p class="place-description">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="place-order js-buy-ticket">Buy Tickets</button>
+                  <button class="btn js-buy-ticket">Buy Tickets</button>
                 </div>
               </div>
-              <div class="place-item">
+              <div class="col-3rd col">
                 <img
                   src="./assets/img/tour/tour3.jpg"
                   alt="New York"
@@ -153,20 +158,77 @@
                   <p class="place-description">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="place-order js-buy-ticket">Buy Tickets</button>
+                  <button class="btn js-buy-ticket">Buy Tickets</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- Contact -->
-        <div class="content-section">
+        <div id="contact" class="content-section">
           <h2 class="section-heading">CONTACT</h2>
-          <p class="section-sub-heading">We love our fans!</p>
+          <p class="section-sub-heading">Fan? Drop a note!</p>
+          <div class="row contact-container">
+            <div class="col col-2nd contact-info">
+              <p><i class="ti-location-pin"></i>Chicago, US</p>
+              <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+              <p><i class="ti-email"></i>Email: mail@mail.com</p>
+            </div>
+            <div class="col col-2nd contact-form">
+              <form action="">
+                <div class="row">
+                  <div class="col col-2nd">
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Name"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="col col-2nd">
+                    <input
+                      type="email"
+                      name=""
+                      placeholder="Email"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row mt-8">
+                  <div class="col col-full">
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Message"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+                <input type="submit" value="SEND" class="btn put-right mt-16" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact -->
+        <div class="map-section">
+          <img src="./assets/img/map/map.jpg" alt="map" />
         </div>
       </div>
       <!-- Footer -->
-      <div id="footer"></div>
+      <div id="footer">
+        <div class="social-list">
+          <a href=""><i class="ti-facebook"></i></a>
+          <a href=""><i class="ti-instagram"></i></a>
+          <a href=""><i class="ti-youtube"></i></a>
+          <a href=""><i class="ti-pinterest"></i></a>
+          <a href=""><i class="ti-twitter"></i></a>
+          <a href=""><i class="ti-linkedin"></i></a>
+        </div>
+        <p class="copyright">Powered by <a href="">w3.css</a></p>
+      </div>
     </div>
 
     <div class="modal js-modal">

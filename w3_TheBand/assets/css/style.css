@@ -7,10 +7,73 @@
 
 html {
   font-family: Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .text-white {
   color: #ffffff !important;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-3rd {
+  width: calc(100% / 3);
+}
+
+.col-2nd {
+  width: 50%;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #000000;
+  background-color: #cccccc;
+}
+
+.put-right {
+  float: right;
 }
 
 /***** Header *****/
@@ -124,8 +187,9 @@ html {
 
 #content .content-section {
   width: 800px;
-  margin: 0 auto;
-  padding: 64px 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0 112px;
 }
 
 #content .section-heading {
@@ -152,12 +216,6 @@ html {
 #content .member-list {
   margin-top: 47px;
   overflow: hidden;
-}
-
-#content .member-item {
-  float: left;
-  width: calc(100% / 3);
-  text-align: center;
 }
 
 #content .member-name {
@@ -209,16 +267,9 @@ html {
 
 .place-list {
   margin-top: 32px;
-  margin-bottom: 48px;
   overflow: hidden;
   margin-left: -8px;
   margin-right: -8px;
-}
-
-.place-item {
-  float: left;
-  width: calc(100% / 3);
-  padding: 0 8px;
 }
 
 .place-img {
@@ -251,19 +302,62 @@ html {
   margin-top: 15px;
 }
 
-.place-order {
-  color: #ffffff;
-  background-color: #000000;
-  text-decoration: none;
-  padding: 11px 16px;
-  display: inline-block;
-  margin-top: 15px;
-  margin-bottom: 15px;
+/***** Contact Form *****/
+.contact-container {
+  margin-top: 48px;
 }
 
-.place-order:hover {
-  color: #000000;
-  background-color: #cccccc;
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-info p i[class*="ti-"] {
+  display: inline-block;
+  width: 30px;
+}
+
+.contact-form {
+  font-size: 15px;
+}
+
+.contact-form .form-control {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+
+.map-section {
+  width: 100%;
+}
+
+/***** Footer *****/
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+
+#footer .social-list {
+  font-size: 24px;
+}
+
+#footer .social-list a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a:hover,
+#footer .social-list a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /***** Ticket Modal *****/
