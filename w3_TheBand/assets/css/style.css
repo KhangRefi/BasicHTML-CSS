@@ -274,7 +274,7 @@ html {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -282,8 +282,10 @@ html {
 .modal-container {
   background-color: #ffffff;
   width: 900px;
+  max-width: calc(100% - 32px);
   min-height: 200px;
   position: relative;
+  animation: modalFadeIn ease 0.5s;
 }
 
 .modal-header {
@@ -351,4 +353,19 @@ html {
 
 .modal-footer a {
   color: #2196f3;
+}
+
+.modal.open {
+  display: flex;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
