@@ -178,8 +178,7 @@ html {
 #slider {
   margin-top: 46px;
   padding-top: 50%;
-  background: url("/w3_TheBand/assets/img/slider/slider1.jpg") top center /
-    cover no-repeat;
+  background: url("../img/slider/slider1.jpg") top center / cover no-repeat;
   position: relative;
 }
 
@@ -200,6 +199,7 @@ html {
 #slider .slider-description {
   font-size: 15px;
   padding: 15px 0;
+  text-shadow: 0 0 1px #000000;
 }
 
 /***** Content *****/
@@ -337,6 +337,14 @@ html {
 .contact-info p i[class*="ti-"] {
   display: inline-block;
   width: 30px;
+}
+
+.contact-info a {
+  opacity: 0.8;
+}
+
+.contact-info a:hover {
+  opacity: 1;
 }
 
 .contact-form {
@@ -486,7 +494,7 @@ html {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 739px) {
   .s-col-full,
   .s-full-width {
     width: 100% !important;
@@ -548,5 +556,31 @@ html {
 
   .contact-form {
     margin-top: 16px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .btn {
+    padding: 15px 16px;
+  }
+
+  #nav .subnav a {
+    padding: 5px 12px;
+  }
+
+  .contact-form .form-control {
+    padding: 15px;
+  }
+
+  .contact-info {
+    line-height: 2;
+  }
+
+  .social-list {
+    font-size: 48px;
+  }
+
+  #footer .social-list a {
+    margin: 0 8px;
   }
 }
