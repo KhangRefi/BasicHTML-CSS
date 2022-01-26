@@ -41,6 +41,10 @@
         <div class="nav-search">
           <i class="search-icon ti-search"></i>
         </div>
+
+        <div id="mobile-menu" class="nav-mobile-menu">
+          <i class="menu-icon ti-menu"></i>
+        </div>
       </div>
       <!-- Slider -->
       <div id="slider">
@@ -269,10 +273,32 @@
     </div>
 
     <script>
-      const buyBtns = document.querySelectorAll(".js-buy-ticket");
-      const modal = document.querySelector(".js-modal");
-      const modalContainer = document.querySelector(".js-modal-container");
-      const modalClose = document.querySelector(".js-modal-close");
+      let header = document.getElementById("header");
+      let mobileMenu = document.getElementById("mobile-menu");
+      let headerHeight = header.clientHeight;
+      mobileMenu.onclick = function () {
+        const isClose = header.clientHeight === headerHeight;
+        if (isClose) {
+          header.style.height = "auto";
+        } else {
+          header.style.height = null;
+        }
+      };
+
+      const menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+      for (let i = 0; i < menuItems.length; i++) {
+        let menuItem = menuItems[i];
+
+        menuItem.onclick = function () {
+          header.style.height = null;
+        };
+      }
+    </script>
+    <script>
+      let buyBtns = document.querySelectorAll(".js-buy-ticket");
+      let modal = document.querySelector(".js-modal");
+      let modalContainer = document.querySelector(".js-modal-container");
+      let modalClose = document.querySelector(".js-modal-close");
 
       function showModal() {
         modal.classList.add("open");
@@ -282,7 +308,7 @@
         modal.classList.remove("open");
       }
 
-      for (const buyBtn of buyBtns) {
+      for (let buyBtn of buyBtns) {
         buyBtn.addEventListener("click", showModal);
       }
 

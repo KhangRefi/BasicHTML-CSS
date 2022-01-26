@@ -92,16 +92,26 @@ html {
   right: 0;
 }
 
-#header .nav-search {
+#header .nav-search,
+#header .nav-mobile-menu {
   color: #ffffff;
   float: right;
   line-height: 46px;
   padding: 0 21px;
 }
 
+#header .nav-mobile-menu {
+  display: none;
+}
+
 #header .nav-search:hover {
   background-color: #f44336;
   cursor: pointer;
+}
+
+#header .nav-mobile-menu:hover {
+  background-color: #cccccc;
+  color: #000000;
 }
 
 #nav {
@@ -468,5 +478,23 @@ html {
   to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@media (max-width: 740px) {
+  #nav li {
+    display: block;
+  }
+
+  #header {
+    overflow: hidden;
+  }
+
+  #header .nav-search {
+    display: none;
+  }
+
+  #header .nav-mobile-menu {
+    display: block;
   }
 }
