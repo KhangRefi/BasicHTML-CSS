@@ -482,12 +482,16 @@ html {
 }
 
 @media (max-width: 740px) {
-  #nav li {
+  #header {
+    overflow: hidden;
+  }
+
+  #header #nav > li {
     display: block;
   }
 
-  #header {
-    overflow: hidden;
+  #header #nav > li:first-child {
+    display: inline-block;
   }
 
   #header .nav-search {
@@ -495,6 +499,13 @@ html {
   }
 
   #header .nav-mobile-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #nav {
     display: block;
   }
 }
