@@ -55,6 +55,10 @@ html {
   margin-top: 16px !important;
 }
 
+.mt-32 {
+  margin-top: 32px !important;
+}
+
 .btn {
   color: #ffffff;
   background-color: #000000;
@@ -64,6 +68,7 @@ html {
   margin-top: 15px;
   margin-bottom: 15px;
   border: none;
+  text-align: center;
 }
 
 .btn:hover {
@@ -283,7 +288,7 @@ html {
 }
 
 .place-list {
-  margin-top: 32px;
+  margin-top: 16px;
   overflow: hidden;
   margin-left: -8px;
   margin-right: -8px;
@@ -482,6 +487,15 @@ html {
 }
 
 @media (max-width: 740px) {
+  .s-col-full,
+  .s-full-width {
+    width: 100% !important;
+  }
+
+  .s-mt-8 {
+    margin-top: 8px !important;
+  }
+
   #header {
     overflow: hidden;
   }
@@ -507,5 +521,32 @@ html {
 
   #nav {
     display: block;
+  }
+
+  #nav li a {
+    padding: 1px 24px;
+  }
+
+  #nav .subnav {
+    position: initial;
+    background-color: #333333;
+  }
+
+  #nav .subnav a {
+    color: #ffffff;
+    padding: 5px 41px;
+  }
+
+  .member-item {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .member-img {
+    min-width: 60%;
+  }
+
+  .contact-form {
+    margin-top: 16px;
   }
 }
